@@ -217,7 +217,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".navbar a")[0].textContent = langData.home;
     document.querySelectorAll(".navbar a")[1].textContent = langData.services;
     document.querySelectorAll(".navbar a")[2].textContent = langData.about;
-    document.querySelectorAll(".navbar a")[3].textContent = langData.attorneys;
     
 
     document.querySelector(".home-content h1").textContent = langData.heroTitle;
