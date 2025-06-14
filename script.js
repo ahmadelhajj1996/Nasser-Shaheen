@@ -18,7 +18,7 @@ const translations = {
       "We offer comprehensive legal solutions tailored to your needs",
     criminalLaw: "Criminal Law",
     criminalDesc:
-      "Expert defense for all criminal charges from misdemeanors to felonies.",
+      "Writing and drafting legal memoranda and filing all types of reports",
     familyLaw: "Family Law",
     familyDesc:
       "Divorce, child custody, and other family-related legal matters.",
@@ -98,7 +98,8 @@ const translations = {
     servicesTitle: "خدماتنا القانونية",
     servicesSubtitle: "نقدم حلولاً قانونية شاملة مصممة خصيصًا لاحتياجاتك",
     criminalLaw: "القانون الجنائي",
-    criminalDesc: "دفاع خبير لجميع التهم الجنائية من الجنح إلى الجنايات.",
+    criminalDesc:
+      "كتابة المذكرات وصياغتها صياغة قانونية وفتح البلاغات بكافة أنواعها ",
     familyLaw: "قانون الأسرة",
     familyDesc:
       "قضايا الطلاق وحضانة الأطفال وغيرها من الأمور القانونية المتعلقة بالأسرة.",
@@ -169,7 +170,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const htmlElement = document.documentElement;
   const langText = document.querySelector(".lang-text");
 
-
   // With this new code:
   const savedLang = localStorage.getItem("preferredLang");
   const browserLang = navigator.language || navigator.userLanguage;
@@ -217,7 +217,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".navbar a")[0].textContent = langData.home;
     document.querySelectorAll(".navbar a")[1].textContent = langData.services;
     document.querySelectorAll(".navbar a")[2].textContent = langData.about;
-    
 
     document.querySelector(".home-content h1").textContent = langData.heroTitle;
     document.querySelector(".home-content p").textContent =
@@ -245,7 +244,6 @@ document.addEventListener("DOMContentLoaded", function () {
       langData.personalInjuryDesc;
     serviceCards[5].querySelector("h3").textContent = langData.estatePlanning;
     serviceCards[5].querySelector("p").textContent = langData.estateDesc;
-
 
     document.querySelector(".about-text h2").textContent = langData.aboutUs;
     document.querySelector(".about-question").textContent =
